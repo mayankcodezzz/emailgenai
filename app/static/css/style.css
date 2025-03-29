@@ -1,0 +1,59 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f3f5;
+    transition: background-color 0.2s;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 0;
+    padding: 10px 20px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.form-control, .form-select {
+    border-radius: 6px;
+}
+
+.btn {
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+    border-left: 0;
+    border-right: 0;
+}

@@ -1,0 +1,14 @@
+2025-03-26 19:27:46,197 - email - INFO - Inbox fetched successfully
+2025-03-26 19:27:52,378 - email - INFO - Inbox fetched successfully
+2025-03-26 19:28:14,536 - email - INFO - Email sent successfully to tulsi8780@gmail.com
+2025-03-26 19:28:17,156 - email - INFO - Inbox fetched successfully
+2025-03-26 22:55:22,798 - email - INFO - User not logged in, redirecting to login
+2025-03-26 23:01:59,914 - email - INFO - Inbox fetched successfully
+2025-03-26 23:08:27,076 - email - INFO - Email sent successfully to mypivotpoint@gmail.com
+2025-03-26 23:08:29,798 - email - INFO - Inbox fetched successfully
+2025-03-26 23:10:38,546 - email - INFO - Inbox fetched successfully
+2025-03-26 23:10:57,540 - email - INFO - Inbox fetched successfully
+2025-03-26 23:12:25,997 - email - INFO - Inbox fetched successfully
+2025-03-26 23:12:36,875 - email - INFO - Thread 195d5cb914eb2b87 fetched successfully
+2025-03-29 10:14:28,155 - email - INFO - Inbox fetched successfully
+2025-03-29 10:14:54,114 - email - ERROR - Failed to fetch inbox: Failed to fetch emails: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})

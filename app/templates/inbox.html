@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="mb-4">Inbox</h1>
+<div class="card">
+    <div class="card-body p-0">
+        <table class="table table-hover mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th>From</th>
+                    <th>Subject</th>
+                    <th>Snippet</th>
+                    <th>Thread Count</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for email in emails %}
+                <tr>
+                    <td>{{ email.sender }}</td>
+                    <td>{{ email.subject }}</td>
+                    <td>{{ email.snippet }}</td>
+                    <td>{{ email.count }}</td>
+                    <td><a href="{{ url_for('email.reply', thread_id=email.thread_id) }}" class="btn btn-sm btn-outline-primary">Reply</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

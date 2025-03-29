@@ -1,0 +1,17 @@
+2025-03-26 19:27:43,447 - gmail - INFO - New token saved
+2025-03-26 19:27:46,197 - gmail - INFO - Emails fetched successfully for inbox
+2025-03-26 19:27:52,378 - gmail - INFO - Emails fetched successfully for inbox
+2025-03-26 19:28:14,536 - gmail - INFO - Email sent successfully to tulsi8780@gmail.com
+2025-03-26 19:28:17,155 - gmail - INFO - Emails fetched successfully for inbox
+2025-03-26 23:01:57,150 - gmail - INFO - New token saved
+2025-03-26 23:01:59,913 - gmail - INFO - Emails fetched successfully for inbox
+2025-03-26 23:08:27,075 - gmail - INFO - Email sent successfully to mypivotpoint@gmail.com
+2025-03-26 23:08:29,798 - gmail - INFO - Emails fetched successfully for inbox
+2025-03-26 23:10:38,544 - gmail - INFO - Emails fetched successfully for inbox
+2025-03-26 23:10:57,540 - gmail - INFO - Emails fetched successfully for inbox
+2025-03-26 23:12:25,997 - gmail - INFO - Emails fetched successfully for inbox
+2025-03-26 23:12:36,874 - gmail - INFO - Thread 195d5cb914eb2b87 fetched successfully
+2025-03-26 23:12:56,636 - gmail - INFO - Thread 195d5cb914eb2b87 fetched successfully
+2025-03-29 10:14:24,904 - gmail - INFO - New token saved
+2025-03-29 10:14:28,153 - gmail - INFO - Emails fetched successfully for inbox
+2025-03-29 10:14:54,113 - gmail - ERROR - Error fetching emails: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
