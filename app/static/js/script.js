@@ -5,13 +5,17 @@ function generateEmail() {
     const tone = document.getElementById('tone').value;
     const detail_level = document.getElementById('detail_level').value;
     const to = document.getElementById('to').value;
+    const generateBtn = document.querySelector('.btn-primary');
     
+    generateBtn.style.boxShadow = '0 0 30px rgba(0, 255, 255, 0.8)';
+    setTimeout(() => generateBtn.style.boxShadow = '0 0 15px rgba(0, 255, 255, 0.5)', 300);
+
     fetch('/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-            prompt, 
-            tone, 
+        body: JSON.stringify({
+            prompt,
+            tone,
             detail_level,
             recipient_name: to,
             sender_name: 'Mayank'
@@ -21,8 +25,8 @@ function generateEmail() {
     .then(data => {
         if (data.subject && data.body) {
             document.getElementById('subject').value = data.subject;
-            rawEmailBody = data.body; // Store raw HTML with <br> tags
-            document.getElementById('body').value = data.body.replace(/<br>/g, '\n'); // Display with newlines
+            rawEmailBody = data.body;
+            document.getElementById('body').value = data.body.replace(/<br>/g, '\n');
         } else {
             alert('Error: ' + data.error);
         }
@@ -35,14 +39,18 @@ function generateReply(thread_id) {
     const tone = document.getElementById('tone').value;
     const detail_level = document.getElementById('detail_level').value;
     const to = document.getElementById('to').value;
+    const generateBtn = document.querySelector('.btn-primary');
     
+    generateBtn.style.boxShadow = '0 0 30px rgba(0, 255, 255, 0.8)';
+    setTimeout(() => generateBtn.style.boxShadow = '0 0 15px rgba(0, 255, 255, 0.5)', 300);
+
     fetch('/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-            prompt, 
-            tone, 
-            detail_level, 
+        body: JSON.stringify({
+            prompt,
+            tone,
+            detail_level,
             thread_id,
             recipient_name: to,
             sender_name: 'Mayank'
@@ -52,8 +60,8 @@ function generateReply(thread_id) {
     .then(data => {
         if (data.subject && data.body) {
             document.getElementById('subject').value = data.subject;
-            rawEmailBody = data.body; // Store raw HTML with <br> tags
-            document.getElementById('body').value = data.body.replace(/<br>/g, '\n'); // Display with newlines
+            rawEmailBody = data.body;
+            document.getElementById('body').value = data.body.replace(/<br>/g, '\n');
         } else {
             alert('Error: ' + data.error);
         }
@@ -68,7 +76,9 @@ function formatText(style) {
     const selectedText = textarea.value.substring(start, end);
     let formattedText = style === 'bold' ? `<b>${selectedText}</b>` : `<i>${selectedText}</i>`;
     textarea.value = textarea.value.substring(0, start) + formattedText + textarea.value.substring(end);
-    rawEmailBody = textarea.value.replace(/\n/g, '<br>'); // Update raw body with HTML tags
+    rawEmailBody = textarea.value.replace(/\n/g, '<br>');
+    textarea.style.boxShadow = '0 0 20px rgba(0, 255, 255, 0.5)'; // Glow on format
+    setTimeout(() => textarea.style.boxShadow = '0 0 10px rgba(0, 255, 255, 0.2)', 300);
 }
 
 function updateFont() {
@@ -79,5 +89,8 @@ function updateFont() {
 // Override form submission to use raw HTML body
 document.querySelector('form').addEventListener('submit', function(e) {
     const bodyInput = document.getElementById('body');
-    bodyInput.value = rawEmailBody; // Set the form value to raw HTML before submission
+    bodyInput.value = rawEmailBody;
+    const submitBtn = document.querySelector('.btn-success');
+    submitBtn.style.boxShadow = '0 0 30px rgba(0, 255, 153, 0.8)';
+    setTimeout(() => submitBtn.style.boxShadow = '0 0 15px rgba(0, 255, 153, 0.5)', 300);
 });

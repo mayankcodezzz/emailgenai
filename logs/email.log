@@ -12,3 +12,19 @@
 2025-03-26 23:12:36,875 - email - INFO - Thread 195d5cb914eb2b87 fetched successfully
 2025-03-29 10:14:28,155 - email - INFO - Inbox fetched successfully
 2025-03-29 10:14:54,114 - email - ERROR - Failed to fetch inbox: Failed to fetch emails: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2025-04-08 20:44:20,992 - email - INFO - User not logged in, redirecting to login
+2025-04-08 20:48:32,717 - email - INFO - Inbox fetched successfully
+2025-04-08 20:49:05,926 - email - INFO - Thread 19614c64c31a8715 fetched successfully
+2025-04-08 20:50:04,574 - email - INFO - Inbox fetched successfully
+2025-04-08 20:50:07,054 - email - INFO - Inbox fetched successfully
+2025-04-08 20:53:23,292 - email - INFO - Inbox fetched successfully
+2025-04-08 20:59:48,773 - email - INFO - Inbox fetched successfully
+2025-04-08 21:00:05,645 - email - INFO - Thread 1961845487f9436b fetched successfully
+2025-04-08 21:02:19,975 - email - INFO - Thread 1961845487f9436b fetched successfully
+2025-04-08 21:02:57,540 - email - INFO - Inbox fetched successfully
+2025-04-08 21:05:03,021 - email - INFO - Email sent successfully to 1mayank.codes@gmail.com
+2025-04-08 21:05:06,251 - email - INFO - Inbox fetched successfully
+2025-04-08 21:05:35,083 - email - INFO - Thread 1961845487f9436b fetched successfully
+2025-04-08 21:06:39,946 - email - INFO - Reply sent successfully to 1mayank.codes@gmail.com
+2025-04-08 21:06:42,829 - email - INFO - Inbox fetched successfully
+2025-04-08 21:07:55,914 - email - INFO - User not logged in, redirecting to login

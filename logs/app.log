@@ -1313,3 +1313,5 @@ google.api_core.exceptions.NotFound: 404 models/gemini-pro is not found for API 
 2025-03-26 22:47:16,457 - app - INFO - Application starting up
 2025-03-29 10:14:08,868 - app - INFO - Application starting up
 2025-03-29 10:14:12,140 - app - INFO - Application starting up
+2025-04-08 20:44:10,920 - app - INFO - Application starting up
+2025-04-08 20:44:12,536 - app - INFO - Application starting up
